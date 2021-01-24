@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChatBook Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="body_bg">
+<div class="container">
+<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-info">Logout</button>
+	<center>
+		<h1 class="header" style="color: #5e93bf;">	
+			ChatBook
+			<sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		<h3 id="user_name_welcome" style="color:#5e93bf;"></h3>
+		<div class="form-group input_div_room_page">
+			<label>Chat room name:</label>
+            <input  type="text" id="room_name" placeholder="Add Chat room name" class="form-control">
+		</div>
+		<button onclick="addRoom()"class="btn btn-success">Add Chat Room</button>
+		<h3 style="color:#5e93bf;">OTHER ROOMS</h3>
+	    <div id="output" style="background-color:#edf8fa;"></div>
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
+</html>
